@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px) {
+    
+    .login-r-box {
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .logo-wrap{
+        width: 100% !important;
+        top: 30px !important;
+        left: 0 !important;
+        text-align: center !important;
+    }
+    
+    .logo-wrap img{
+        width:100px;
+    }
+
+    .form-box{
+        width: 100%;
+    }
+
+}
