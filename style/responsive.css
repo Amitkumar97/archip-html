@@ -1,5 +1,4 @@
 @media only screen and (max-width: 768px) {
-    
     .login-r-box {
         width: 100%;
         border-top-left-radius: 0px;
@@ -20,5 +19,14 @@
     .form-box{
         width: 100%;
     }
+}
 
+/* Setting up height */
+@media only screen and (max-height:600px) {
+    .login-r-box{
+        height: 600px;
+    }
+    .login-container{
+        height: 600px;
+    }
 }
