@@ -13,7 +13,9 @@
     <body>
         <div class="container">
             
-            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <a class="btn btn-primary" data-bs-toggle="modal" href="#loginModal" role="button">Open first modal</a>
+
+            <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content jumbotron d-flex align-items-center min-vh-98">
                         
@@ -104,7 +106,7 @@
                     </div>
                 </div>
             </div>
-        <!-- <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <!-- <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -197,7 +199,7 @@
                 </div>
             </div>
         </div>
-        <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a> -->
+        <a class="btn btn-primary" data-bs-toggle="modal" href="#loginModal" role="button">Open first modal</a> -->
         
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -207,6 +209,6 @@
 
 <script>
     $(document).ready(function(){
-        $('#exampleModalToggle').modal('show');
+        $('#loginModal').modal('show');
     });
 </script>
