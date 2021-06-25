@@ -19,33 +19,35 @@ function togglePsw(type, iconClass) {
 
 var pswShowBtn = document.querySelector(".psw-visibility");
 var mouseDownCheck = false;
+if(pswShowBtn){
+  pswShowBtn.addEventListener('pointerdown', function(e) {
+    // if (this.isScrolled) {
+    //     e.target.addEventListener('click', preventClick);
+    // } else {
+    //     e.target.removeEventListener('click', preventClick);
+    // }
+    // this.isScrolled = false;
+    // element.removeEventListener('mousemove', flagged);
+    //pswToggle.removeEventListener('mousemove', flagged);
+    //pswToggle.data('clicked', true);
+    togglePsw('text', 'fa-eye');
+    mouseDownCheck = true;
+  });
+  pswShowBtn.addEventListener('pointerup', function(e) {
+    // if (this.isScrolled) {
+    //     e.target.addEventListener('click', preventClick);
+    // } else {
+    //     e.target.removeEventListener('click', preventClick);
+    // }
+    // this.isScrolled = false;
+    // element.removeEventListener('mousemove', flagged);
+    //pswToggle.removeEventListener('mousemove', flagged);
+    //pswToggle.data('clicked', false);
+    togglePsw('password', 'fa-eye-slash');
+    mouseDownCheck = false;
+  });
 
-pswShowBtn.addEventListener('pointerdown', function(e) {
-  // if (this.isScrolled) {
-  //     e.target.addEventListener('click', preventClick);
-  // } else {
-  //     e.target.removeEventListener('click', preventClick);
-  // }
-  // this.isScrolled = false;
-  // element.removeEventListener('mousemove', flagged);
-  //pswToggle.removeEventListener('mousemove', flagged);
-  //pswToggle.data('clicked', true);
-  togglePsw('text', 'fa-eye');
-  mouseDownCheck = true;
-});
-pswShowBtn.addEventListener('pointerup', function(e) {
-  // if (this.isScrolled) {
-  //     e.target.addEventListener('click', preventClick);
-  // } else {
-  //     e.target.removeEventListener('click', preventClick);
-  // }
-  // this.isScrolled = false;
-  // element.removeEventListener('mousemove', flagged);
-  //pswToggle.removeEventListener('mousemove', flagged);
-  //pswToggle.data('clicked', false);
-  togglePsw('password', 'fa-eye-slash');
-  mouseDownCheck = false;
-});
+
 
 // if (pswToggle.is('.ui-draggable-dragging')) {
 //     alert('w');
@@ -65,6 +67,7 @@ pswShowBtn.addEventListener('mouseleave', e => {
     togglePsw('password', 'fa-eye-slash');
   }
 });
+}
 
 
 /**--START-- Ripple effect on button */
