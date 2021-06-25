@@ -1,7 +1,16 @@
 .modal-dialog{
-    max-width: 92%;
     font-family: 'Open Sans', sans-serif;
 }
+
+/** Size of modal */
+.modal-width-92{
+    max-width: 92%;
+}
+.modal-width-60{
+    max-width: 40%;
+}
+
+
 .close-btn>a{
     position: absolute;
     right: 30px;
@@ -25,7 +34,12 @@
 }
 .container-main{
     margin: auto 0px;
+}
+.container-width-50{
     width: 50%;
+}
+.container-width-80{
+    width: 80%;
 }
 .icon-container > img{
     width: 120px;
@@ -162,7 +176,7 @@
     background-color: #ffffff;
     font-style: normal;
     font-weight: 600;
-    font-size: 13.3px;
+    font-size: 11px;
     line-height: 21px;
     letter-spacing: 0.11em;
     color: #708EFF;
