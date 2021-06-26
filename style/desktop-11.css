@@ -1,14 +1,20 @@
-.modal-dialog{
-    font-family: 'Open Sans', sans-serif;
+
+.font-family{
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.screen-background{
+    background-color: #2EDF84;
 }
 
 /** Size of modal */
-.modal-width-92{
+.desktop-11-modal-width{
     max-width: 92%;
 }
-.modal-width-60{
+.desktop-12-modal-width{
     max-width: 40%;
 }
+
 .close-btn>a{
     position: absolute;
     right: 30px;
@@ -16,11 +22,12 @@
     font-size: 25px;
     color: #fff;
 }
+
 .min-vh-98{
     min-height: 94vh !important;
 }
+
 .modal-content{
-    background-color: #2EDF84;
     border-radius: 40px;
 }
 .center {
@@ -29,15 +36,18 @@
     text-align: center;
     padding: 10px;
 }
+
 .container-main{
     margin: auto 0px;
 }
 .container-width-50{
     width: 50%;
 }
-.container-width-80{
+
+/*.container-width-80{
     width: 80%;
-}
+}*/
+
 .icon-container > img{
     width: 120px;
 }
@@ -58,6 +68,7 @@
     width: 65%;
     margin: 0 auto;
 }
+
 .login-description{
     font-style: normal;
     font-weight: normal;
@@ -115,16 +126,7 @@
     height: 18px;
     width: 18px;
     background: rgba(255, 255, 255, 0.55);
-    /* display: inline-block; */
-    /* vertical-align: middle; */
 }
-/* .form-checkbox:focus ~ .custom-control-label::before {
-    box-shadow:none !important;
-    outline:0;
-} */
-/* .form-checkbox:focus{
-    outline: 0;
-} */
 .form-checkbox__label{
     font-style: normal;
     font-weight: 500;
@@ -243,7 +245,10 @@
 /**START--Responsive*/
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
-    .modal-width-60 {
+    .container-position{
+        width: 50%;
+    }
+    .desktop-12-modal-width {
         max-width: 50%; 
     }
     .data-container{
@@ -256,7 +261,10 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-    .modal-width-60 {
+    .container-position{
+        width: 60%;
+    }
+    .desktop-12-modal-width {
         max-width: 60%; 
     }
     .data-container{
@@ -284,14 +292,20 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-    .modal-width-60 {
+    .container-position{
+        width: 80%;
+    }
+    .desktop-12-modal-width {
         max-width: 70%; 
     }
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .modal-width-60 {
+    .container-position{
+        width: 100%;
+    }
+    .desktop-12-modal-width {
         max-width: 100%;
     }
     .login-title{
