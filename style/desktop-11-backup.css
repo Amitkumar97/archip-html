@@ -9,6 +9,8 @@
 .modal-width-60{
     max-width: 40%;
 }
+
+
 .close-btn>a{
     position: absolute;
     right: 30px;
@@ -27,6 +29,7 @@
     margin: auto;
     width: 50%;
     text-align: center;
+    /* border: 3px solid green; */
     padding: 10px;
 }
 .container-main{
@@ -68,6 +71,19 @@
     color: #FFFFFF;
 
 }
+
+/* .login-container .nav-tabs .nav-item.focus {
+    padding: 7px 12px;
+    line-height: 0.8;
+    border: 0;
+    border-radius: 20px;
+} */
+  
+/* .login-container .nav-tabs {
+    border-bottom: 0;
+    margin-top: 35px;
+    margin-bottom: 30px;
+} */
 
 .form-section-list-items{
     margin: 0;
@@ -164,7 +180,7 @@
     line-height: 21px;
     letter-spacing: 0.11em;
     color: #708EFF;
-    box-shadow: 3px 3px 10px 0px gray;
+    box-shadow: 10px 20px 18px #888888;
 }
 .custom-button:focus{
     box-shadow: 0px 0px 0px 0px;
@@ -241,11 +257,7 @@
 
 
 /**START--Responsive*/
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
-    .modal-width-60 {
-        max-width: 50%; 
-    }
     .data-container{
         width: 100%;
     }
@@ -253,12 +265,7 @@
         margin: 20px 0px;
     }
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-    .modal-width-60 {
-        max-width: 60%; 
-    }
+@media only screen and (max-width: 800px) {
     .data-container{
         width: 100%;
     }
@@ -278,40 +285,16 @@
         font-size: 11px;
     }
     .custom-button{
-        font-size: 13px;
+        font-size: 14px;
     }
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    .modal-width-60 {
-        max-width: 70%; 
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .modal-width-60 {
-        max-width: 100%;
-    }
-    .login-title{
-        font-size: 16px;
-    }
-    .login-description,
-    .form-section-list-item>a{
-        font-size: 12px;
-    }
+@media only screen and (max-width: 350px) {
     .form-checkbox__label,
     .forgot-link{
-        font-size: 10px;
-    }
-    .custom-button{
         font-size: 9px;
     }
+    .custom-button{
+        font-size: 11px;
+    }
 }
-
-
-
-
-
-
+/**END--Responsive*/
