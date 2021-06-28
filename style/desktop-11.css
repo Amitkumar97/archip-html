@@ -99,7 +99,7 @@
     letter-spacing: 0.11em;
 }
 
-.form-control{
+/*.form-control{
     text-indent: 10px;
 }
 .form-control::placeholder {
@@ -108,17 +108,54 @@
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 2px;
     color: #7D7D7D;
+}*/
+.archip-input {
+  padding: 11px 25px;
+  padding-right: 45px;
+  line-height: 0.8;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
 }
 
-.inner-addon{
-    position: relative;
+.archip-input:focus {
+  box-shadow: 0 0 0 2px #0CECE1;
+  outline: none;
 }
-.inner-addon>.fas{
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
-    color: #7D7D7D;
-    right: 10px;
+.archip-input-wrap {
+  position: relative;
+}
+
+.archip-input-wrap i {
+  color: #7D7D7D;
+  font-size: 17px;
+  position: absolute;
+  right: 20px;
+  top: 14px;
+}
+.archip-input::-webkit-input-placeholder { /* Edge */
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  color: #7D7D7D;
+}
+
+.archip-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  color: #7D7D7D;
+}
+
+.archip-input::placeholder {
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  color: #7D7D7D;
 }
 
 .form-checkbox{
