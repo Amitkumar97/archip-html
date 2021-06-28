@@ -1,0 +1,70 @@
+@media only screen and (max-width: 1500px) {
+    .form-checkbox__label{
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .center{
+        width: 50%;
+    }
+    .data-center{
+        width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .center{
+        width: 60%;
+    }
+    .data-center{
+        width: 60%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .center{
+        width: 70%;
+    }
+    .data-center{
+        width: 70%;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .center{
+        width: 100%;
+    }   
+    .data-center{
+        width: 100%;
+    }
+}
+
+/* Devices below 400px width */
+@media only screen and (max-width: 400px) {
+    .center{
+        width: 100%;
+        margin: 50px 0px;
+    }
+    .data-center{
+        width: 100%;
+        margin: 50px 0px;
+    }
+    .form-checkbox__label{
+        font-size: 10px;
+    }
+    .login-title{
+        font-size: 20px;
+    }
+    .form-section-list-item{
+        display: block;
+        margin: 15px 0px;
+    }
+    .login-btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
