@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./style/desktop-11.css">
+        <link rel="stylesheet" href="./style/style.css">
     </head>
     <body>
         <div class="container">
@@ -18,7 +18,7 @@
             <div class="modal fade" id="loginModal" aria-hidden="true" aria-labelledby="loginModalLabel" tabindex="-1">
                 <div class="modal-dialog desktop-11-modal-width font-family">
 
-                    <div class="modal-content jumbotron d-flex align-items-center min-vh-98 screen-background">
+                    <div class="modal-content jumbotron d-flex align-items-center min-vh-98 desktop-11-background">
                         
                         <div class="close-btn">
                             <a class="" data-bs-dismiss="modal" aria-label="Close" href="javascript:;">
@@ -26,45 +26,106 @@
                             </a>
                         </div>
 
-                        <div class="container container-main text-center container-width-50">
+                        <div class="container login-container">
+
                             <figure class="icon-container mb-40">
                                 <img src="img/logo-white.png">
                             </figure>
 
-                            <h1 class="login-title open-sans-font">
-                                <i class="fas fa-user title-icon"></i>
-                                Login to UziDuzi account
-                            </h1>
+                            
 
-                            <div class="data-container">
+                            <div class="">
+                                <div class="">
+                                    <div class="row l-box justify-content-center">
+                                        <div class="col-md-12 l-box">
+                                            <div class="form-box">
+                                                
+                                                <div class="login-heading vert-alling">
+                                                    <div class="user-icon vert-alling">
+                                                        <i class="fas fa-user"></i>
+                                                    </div>
+                                                    <h1>Login to your account</h1>
+                                                </div>
+
+                                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Login</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Sign-up</button>
+                                                    </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                        <div class="archip-input-wrap">
+                                                            <i class="fas fa-envelope"></i>
+                                                            <input class="archip-input" type="email" placeholder="Email" required="required">
+                                                        </div>
+                                                        <div class="archip-input-wrap archip-psw">
+                                                            <i class="psw-visibility fas fa-eye-slash"></i>
+                                                            <input class="archip-input" type="password" placeholder="Password" required="required">
+                                                        </div>
+                                                        <div class="chk-container">
+                                                            <input type="checkbox" class="form-check-input archip-check" id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+                                                        </div>
+                                                        <div class="archip-btns">
+                                                            <button class="archip-btn ripple-btn">Login</button>
+                                                            <a href="#">Forgot Password?</a>
+                                                        </div>
+                                                        <div class="archip-divider ">
+                                                            <div></div>
+                                                            <span>or sign in with</span>
+                                                            <div></div>
+                                                        </div>
+                                                        <div class="social-signin">
+                                                            <button class="archip-btn a-btn-xl ripple-btn"><img src="./img/google-icon-sm.svg" alt="">Google</button>
+                                                            <div class="social-signin__other">
+                                                                <button class="archip-btn ripple-btn"><img src="./img/facebook-icon-sm.svg" alt="">Facebook</button>
+                                                                <button class="archip-btn ripple-btn"><img src="./img/linkedin-icon-sm.svg" alt="">Linkedin</button>
+                                                                <button class="archip-btn ripple-btn"><img src="./img/twitter-icon-sm.svg" alt="">Twitter</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                        Sign-up
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="data-container">
 
                                 <p class="login-description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
                                     Lorem ipsum dolor sit amet
                                 </p>
 
-                                <ul class="form-section-list-items mb-40">
-                                    <li class="form-section-list-item">
-                                        <a href="javascript:;">Login</a>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Login</button>
                                     </li>
-                                    <li class="form-section-list-item">
-                                        <a href="javascript:;">Sign-up   </a>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Sign-up</button>
                                     </li>
                                 </ul>
 
                                 <div class="login-form-tab mb-20">
                                     <form class="login-form">
-
-                                        <div class="archip-input-wrap">
+                                        <div class="form-group inner-addon mb-20">
                                             <i class="fas fa-envelope"></i>
-                                            <input class="archip-input" type="email" placeholder="Email" required="required">
+                                            <input type="text" placeholder="Email" class="form-control">
                                         </div>
-                                        
-                                        <div class="archip-input-wrap archip-psw">
-                                            <i class="psw-visibility fas fa-eye-slash"></i>
-                                            <input class="archip-input" type="password" placeholder="Password" required="required">
+                                        <div class="form-group inner-addon mb-20">
+                                                <i class="fas fa-eye-slash"></i>
+                                                <input type="text" placeholder="Password" class="form-control" id="pwd">
                                         </div>
-
                                         <div class="checkbox text-left">
                                             <input class="form-check-input form-checkbox" type="checkbox" value="" id="defaultCheck1">
                                             <label class="form-checkbox__label custom-control-label"> I accept the <a href="javascript:;">Terms of Service</a>  and <a href="javascript:;">Privacy Policy</a> </label>
@@ -108,7 +169,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+
                         </div>
                     </div>
                 </div>

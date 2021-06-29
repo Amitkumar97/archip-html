@@ -10,10 +10,43 @@ html,body{
   border-bottom-left-radius: 40px;
 }
 
-/* .login-l-box {
+
+.desktop-11-modal-width{
+    /** Used in desktop-11,12 */
+    max-width: 92%;
+}
+.desktop-12-modal-width{
+    /** Used in desktop-11,12 */
+    max-width: 40%;
+}
+
+.close-btn>a{
+    /** Used in desktop-11,12 */
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+.desktop-11-background{
+    /** Used in desktop-11,12 */
+    background-color: #2EDF84;
+}
+.icon-container > img{
+    /** Used in desktop-11,12 */
+    width: 120px;
+}
+.modal-content{
+    /** Used in desktop-11,12 */
+    border-radius: 40px;
+}
+
+
+
+.login-l-box {
   width: 55vw;
   height: 100vh;
-} */
+} 
 
 .login-1 {
   background-image: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url("../img/photo-1.jpg");
