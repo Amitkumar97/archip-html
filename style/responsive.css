@@ -16,11 +16,21 @@
 
 
 @media only screen and (max-width: 768px) {
+    .login-container {
+      min-height: 850px;
+    }
+
     .login-r-box {
         width: 100%;
+        min-height: 850px;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
     }
+
+    .login-r-box .col-md-12.l-box {
+      display: initial;
+    }
+
     .logo-wrap{
         width: 100% !important;
         top: 30px !important;
@@ -34,6 +44,8 @@
 
     .form-box{
         width: 100%;
+        position: relative;
+        top: 100px;
     }
     .desktop-11-modal-width{
         /** In desktop-11 */
@@ -74,15 +86,15 @@
 
 
 /** Query for height */
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 700px) {
     .desktop-11-container{
         margin-bottom: 20px;
         margin-top: 20px;
     }
     .login-r-box{
-        height: 600px;
+        height: 700px;
     }
     .login-container{
-        height: 600px;
+        height: 700px;
     }
 }

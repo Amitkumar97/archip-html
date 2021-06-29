@@ -378,6 +378,21 @@ span.ripple_blue{
   background-color:#5D50F9;
 }
 
+.action-clr {
+  color: #0CECE1;
+}
+
+.action-clr a {
+  text-decoration: none;
+  color: #0CECE1;
+}
+
+.archip-checktxt {
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
 @keyframes ripple {
   to {
     transform: scale(4);
