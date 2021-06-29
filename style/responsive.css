@@ -1,10 +1,26 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .desktop-11-modal-width{
+        /** In desktop-11 */
+        max-width: 92% !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .desktop-11-modal-width{
+        /** In desktop-11 */
+        max-width: 94% !important;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
     .login-r-box {
         width: 100%;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
     }
-    
     .logo-wrap{
         width: 100% !important;
         top: 30px !important;
@@ -19,10 +35,50 @@
     .form-box{
         width: 100%;
     }
+    .desktop-11-modal-width{
+        /** In desktop-11 */
+        max-width: 96% !important;
+    }
 }
 
-/* Setting up height */
-@media only screen and (max-height:600px) {
+/* Setting up width */
+@media only screen and (max-width:600px) {
+    .desktop-11-modal-width{
+        /** In desktop-11 */
+        max-width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .desktop-11-modal-width{
+        /** In desktop-11 */
+        max-width: 100% !important;
+    }
+    .form-box{
+        width: 280px;
+    }
+    .login-container h1{
+        font-size: 19px;
+    }
+    .login-description{
+        font-size: 12px;
+    }
+    .social-signin__other .archip-btn{
+        font-size: 10px;
+    }
+    .desktop-11-container{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+
+/** Query for height */
+@media only screen and (max-height: 600px) {
+    .desktop-11-container{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
     .login-r-box{
         height: 600px;
     }

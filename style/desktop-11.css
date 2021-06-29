@@ -14,6 +14,12 @@
 .desktop-12-modal-width{
     max-width: 40%;
 }
+.desktop-11-container{
+    width: auto;
+    height: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+}
 
 .close-btn>a{
     position: absolute;
@@ -72,11 +78,12 @@
 .login-description{
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 160.4%;
     text-align: center;
     letter-spacing: 0.07em;
     color: #FFFFFF;
+    margin-top: 10px;
 }
 
 .form-section-list-items{
@@ -216,115 +223,3 @@
 .mb-right-40{
     margin-right: 40px;
 }
-
-/** --START-- Button click animation */
-.ripple-btn {
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-  }
-  span.ripple {
-    position: absolute;
-    border-radius: 50%;
-    transform: scale(0);
-    animation: ripple 600ms linear;
-    background-color:#2EDF84;/* rgba(255, 255, 255, 0.7); */
-  }
-  
-  @keyframes ripple {
-    to {
-      transform: scale(4);
-      opacity: 0;
-    }
-  }
-/** --END- Button click animation */
-
-
-/**START--Responsive*/
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
-    .container-position{
-        width: 50%;
-    }
-    .desktop-12-modal-width {
-        max-width: 50%; 
-    }
-    .data-container{
-        width: 100%;
-    }
-    .container-main{
-        margin: 20px 0px;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-    .container-position{
-        width: 60%;
-    }
-    .desktop-12-modal-width {
-        max-width: 60%; 
-    }
-    .data-container{
-        width: 100%;
-    }
-    .container-main{
-        margin: 20px 0px;
-        width: 100% !important;
-    }
-    .login-title{
-        font-size: 20px;
-    }
-    .login-description,
-    .form-section-list-item>a{
-        font-size: 14px;
-    }
-    .form-checkbox__label,
-    .forgot-link{
-        font-size: 11px;
-    }
-    .custom-button{
-        font-size: 13px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    .container-position{
-        width: 80%;
-    }
-    .desktop-12-modal-width {
-        max-width: 70%; 
-    }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .container-position{
-        width: 100%;
-    }
-    .desktop-12-modal-width {
-        max-width: 100%;
-    }
-    .login-title{
-        font-size: 16px;
-    }
-    .login-description,
-    .form-section-list-item>a{
-        font-size: 12px;
-    }
-    .form-checkbox__label,
-    .forgot-link{
-        font-size: 10px;
-    }
-    .custom-button{
-        font-size: 9px;
-    }
-}
-
-
-
-
-
-
